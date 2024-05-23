@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All About platform</title>
+  <style>
+    /* CSS styles */
+    body {
+      background-color: hotpink;
+    }
+    img.logo {
+      width: 100px;
+      height: 70px;
+      border-radius: 20px;
+    }
+    /* Navigation styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    .logo {
+      margin-left: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      display: inline;
+      margin-right: 10px;
+    }
+    li a {
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+    a:visited {
+      color: black;
+    }
+    a:hover {
+      background-color: red;
+    }
+    a:active {
+      background-color: white;
+    }
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+    .dropdown-contents a {
+      color: darkblue;
+      padding: 12px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown-contents a:hover {
+      background-color: white;
+    }
+    /* Form styles */
+    .search {
+      margin-right: 20px;
+    }
+    .search input[type="search"] {
+      padding: 8px;
+      border-radius: 20px;
+    }
+    .search button {
+      background-color: blue;
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body bgcolor="sky blue">
+  <!-- Header with logo and navigation -->
+  <header>
+    <div class="logo">
+      <img src="3.jpeg" alt="Logo" class="logo">
+    </div>
+    <ul>
+      <li><a href="./home.html">HOME</a></li>
+      <li><a href="./about.html">ABOUT</a></li>
+      <li><a href="./contact.html">CONTACT</a></li>
+      <li><a href="./service.html">SERVICE</a></li>
+      <!-- Tables dropdown -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">Tables</a>
+        <div class="dropdown-contents">
+         a href="./users.html">user</a>
+          <a href="./therapists.html">therapists</a>
+          <a href="./ssessions.html">ssessions</a>
+          <a href="./progressnotes.html">progressnotes</a>
+          <a href="./notifications.html">notifications</a>
+          <a href="./feedbacks.html">feedbacks</a>
+          <a href="./clients.html">clients</a>
+          <a href="./billings.html">billings</a>
+          <a href="./artworkgallery.html">artworkgalley</a>
+          <a href="./appointments.html">appointments</a>
+        </div>
+      </li>
+      <!-- Other navigation items -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">Settings</a>
+        <div class="dropdown-contents">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+    <!-- Search form -->
+    <div class="search">
+      <form class="d-flex" role="search" action="search.php">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <section style="color: black;">
+    <h2 style="color: green;"><u>OUR MISSION TO OUR PLATFORM</u></h2>
+    <p><h3>TCore Purpose,Target Audience,Value Proposition,Impact Goals,Be Concise and Specific,Focus on Differentiators,Include Emotional Appeal,Reflect Your Values.</h3></p>
+    <p><h3>Tasks include Curriculum Development
+ Needs Assessment,
+ Define Learning Outcomes,
+Develop Content and Materials,
+ Pilot Testing,
+ Implementation,
+Evaluation and Iteration,
+Marketing and Recruitment.</h3></p><br>
+
+    <h2 style="color: green;"><u>WHAT DO WE DO</u></h2>
+    <p><h3>A Virtual art therapy ssessions Platform offers online sessions focusing on  Art Therapy Session Hosting, Therapist Support and Training,Client Support Services,Technology Development and Maintenance,Outreach and Community Engagement,Research and Feedback Integration,Compliance and Ethics Management, Curriculum and Content Development,Marketing and Communication:</h3></p>
+    <ul>
+      <li><h3>Hosts virtual workshops focused on IoT technology.
+Delivers educational content and resources related to IoT.
+Facilitates interaction between instructors and participants</h3></li>
+      <li><h3>Offers certification or recognition for workshop completion and gathers feedback for improvement.</h3></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <center><h2>UR CBE BIT &copy; 2024 &reg;, Designed by: Thimothee</h2></center>
+  </footer>
+</body>
+</html>

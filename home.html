@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="styles/css" href="styles.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <style>
+    /* CSS styles */
+    body {
+      background-color: greenyellow;
+      background-image: url('12.JPEG');
+      background-size: cover;
+      min-height: 100vh;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    img.logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+    }
+    /* Navigation styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    .logo {
+      margin-left: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      display: inline;
+      margin-right: 10px;
+    }
+    li a {
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+    a:visited {
+      color: black;
+    }
+    a:hover {
+      background-color: ghostwhite;
+    }
+    a:active {
+      background-color: red;
+    }
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-contents {
+      display: pink;
+    }
+    .dropdown-contents a {
+      color: orange;
+      padding: 12px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown-contents a:hover {
+      background-color: green;
+    }
+    /* Form styles */
+    .search {
+      margin-right: 20px;
+    }
+    .search input[type="search"] {
+      padding: 8px;
+      border-radius: 20px;
+    }
+    .search button {
+      background-color: black;
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 20px;
+    }
+    /* Footer styles */
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with logo and navigation -->
+  <header>
+    <div class="logo">
+      <img src="3.jpeg" alt="Logo" class="logo">
+    </div>
+    <ul>
+      <li><a href="./home.html">HOME</a></li>
+      <li><a href="./about.html">ABOUT</a></li>
+      <li><a href="./contact.html">CONTACT</a></li>
+      <li><a href="./service.html">SERVICE</a></li>
+      <!-- Tables dropdown -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">Tables</a>
+        <div class="dropdown-contents">
+          <a href="./users.html">user</a>
+          <a href="./therapists.html">therapists</a>
+          <a href="./ssessions.html">ssessions</a>
+          <a href="./progressnotes.html">progressnotes</a>
+          <a href="./notifications.html">notifications</a>
+          <a href="./feedbacks.html">feedbacks</a>
+          <a href="./clients.html">clients</a>
+          <a href="./billings.html">billings</a>
+          <a href="./artworkgallery.html">artworkgalley</a>
+          <a href="./appointments.html">appointments</a>
+        </div>
+      </li>
+      <!-- Other navigation items -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">Settings</a>
+        <div class="dropdown-contents">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+    <!-- Search form -->
+    <div class="search">
+      <form class="d-flex" role="search" action="search.php">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <section style="color: black;">
+    <marquee><h1 style="color: white;">YOU ARE HIGHLY WELCOME TO OUR VIRTUAL ART THERAPY SSESSIONS PLATFORM</h1></marquee>
+    <h2 style="color: darkslateblue;"><u>These are the purposes and objectives of the Virtual art therapy ssessions Platform:</u></h2>
+    <ol type="number" style="color:black; background-color: white; width: 500px;">
+      <li><b>Video Conferencing Tool</b></li></br> 
+      <li><b>Resource Library</b></li></br> 
+      <li><b>Secure File Sharing and Storage</b></li></br>  
+      <li><b>Scheduling System </b></li></br> 
+      <li><b>Feedback and Annotation Tools</b></li></br>
+      <li><b>Emotion and Mood Tracker</b></li></br> 
+      <li><b>Accessibility Features</b></li></br>
+      <li><b>Customizable Interface</b></li>
+      <li><b>Privacy and Security Settings</b></li></br>
+      <li><b>Integration Capabilities</b></li></br>
+
+
+    </ol>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h2>UR CBE BIT &copy; 2024 &reg;, Designed by: Thimothee</h2>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All Our Contact Address</title>
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print">
+  <style>
+    /* CSS styles */
+    body {
+      background-color: hotpink;
+    }
+    img {
+      width: 500px;
+      height: 400px;
+      border-radius: 20px;
+    }
+    /* Navigation styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    .logo {
+      margin-left: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      display: inline;
+      margin-right: 10px;
+    }
+    li a {
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+    a:visited {
+      color: black;
+    }
+    a:hover {
+      background-color: red;
+    }
+    a:active {
+      background-color: white;
+    }
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+    .dropdown-contents a {
+      color: orange;
+      padding: 12px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown-contents a:hover {
+      background-color: white;
+    }
+    /* Form styles */
+    .search {
+      margin-right: 20px;
+    }
+    .search input[type="search"] {
+      padding: 8px;
+      border-radius: 20px;
+    }
+    .search button {
+      background-color: blue;
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body bgcolor="orange">
+  <!-- Header with logo and navigation -->
+  <header>
+    <div class="logo">
+      <img src="3.jpg" alt="Logo" class="logo">
+    </div>
+    <ul>
+      <li><a href="./home.html">HOME</a></li>
+      <li><a href="./about.html">ABOUT</a></li>
+      <li><a href="./contact.html">CONTACT</a></li>
+      <li><a href="./service.html">SERVICE</a></li>
+      <!-- Tables dropdown -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">Tables</a>
+        <div class="dropdown-contents">
+          <a href="./users.html">user</a>
+          <a href="./therapists.html">therapists</a>
+          <a href="./ssessions.html">ssessions</a>
+          <a href="./progressnotes.html">progressnotes</a>
+          <a href="./notifications.html">notifications</a>
+          <a href="./feedbacks.html">feedbacks</a>
+          <a href="./clients.html">clients</a>
+          <a href="./billings.html">billings</a>
+          <a href="./artworkgallery.html">artworkgalley</a>
+          <a href="./appointments.html">appointments</a>
+        </div>
+      </li>
+      <!-- Other navigation items -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">Settings</a>
+        <div class="dropdown-contents">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+    <!-- Search form -->
+    <div class="search">
+      <form class="d-flex" role="search" action="search.php">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section>
+    <!-- Contact details and form -->
+    <h2><u>OUR CONTACT US</u></h2>
+    <ul>
+      <li>Address: At olympic hotel</li>
+      <li>Phone: 0788885342</li>
+      <li>Phone: 0788455346</li>
+      <li>Phone: 0732884389</li>
+
+      <li>Email: arttherapy@gmail.com</li>
+    </ul>
+    <form action="submit_contact" method="POST">
+      <label for="name">Names:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="phone">Telephone:</label><br>
+      <input type="tel" id="phone" name="phone"><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <input type="submit" value="send">
+    </form>
+    <p>Connect with us on social media or social networks:
+      <a href="https://www.twitter.com/IOT">YouTube</a>
+      <a href="https://www.YouTube.com/IOT">Facebook</a>
+      <a href="https://www.instagram.com/IOT">Instagram</a>
+      <a href="https://www.linkedin.com/IOT">linkedin</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <center><h2>UR CBE BIT &copy; 2024 &reg;, Designed by: Thimothee</h2></center>
+  </footer>
+</body>
+</html>
